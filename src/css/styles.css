@@ -1,4 +1,8 @@
-.body{
+
+
+
+
+.body,.App{
     display: contents;
     place-items: center;
     min-width: 1rem;
@@ -14,6 +18,20 @@
     font-size: 1.2rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 1rem;
+    z-index: 1;
+    background-color: aqua;
+    
+
+}
+
+@media (max-width: 800px){
+    .card-header{
+        margin: 15px 0px;
+        font-size: 15px;
+    }
+
 }
 /* conversation */
 
@@ -21,39 +39,64 @@
     min-width: 1rem;
     max-width: 150rem;
     min-height: 5rem;
-    max-height: auto;
+    max-height: 150rem;
     background-color: rgb(107, 172, 172);
     border-radius: 20%;
-    margin: auto;
-    padding: auto;
+    margin: 1rem;
+    padding: 1rem;
+    right: 12rem;
      
 }
-.card-footer{
-    min-width: 1rem;
-    max-width: 150rem;
-    min-height: 1rem;
-    max-height: auto;
-    background-color: rgb(107, 172, 172);
-    border-radius: 15%;
-    margin: auto;
-    padding: auto;
-    text-align: center;
-}
-
+/* les fonction msg*/
 .card-message{
     align-items: center;
     font-size: 5rem;
     text-align: center;
-    width: calc(100vw - 300px);
     width: fit-content;
-    border-radius: 10px;
-    margin-bottom: 20px;border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 0rem;
+    margin: 2rem;
+    padding: 0.3rem;
+}
+
+.input{
+    display: flex;
+    width: 90%;
+    position: center;
+    align-items: center;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+.input-message:focus{
+    box-shadow:0 0 1rem 1.1rem black;
+    outline: none;
 }
 
 .input-message{
-    position: relative;
-    align-items: inherit;
+    position: absolute;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    border: none;
+    right:center;
+   
+    color: ivory;
+    background-color: lightgreen;
+    transition: 0.2s all;
+    box-shadow: inset 0 0 0.2rem black;
+
+}
+.button-send{
+    position: absolute;
+    right: center;
+    padding: 1rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    border: none;
+    color: azure;
+    transition: 0.2s all;
+    box-shadow: inset 0 0 0.2rem black;
 }
 .scrollable{
   
@@ -61,4 +104,16 @@
     background: #555;
     border-radius: 8px;
 
+}
+/*footer*/
+.card-footer{
+    min-width: 1rem;
+    max-width: 150rem;
+    min-height: 1rem;
+    max-height: 1rem 1rem;
+    background-color: rgb(107, 172, 172);
+    border-radius: 15%;
+    position: relative;
+    text-align: end;
+    
 }
