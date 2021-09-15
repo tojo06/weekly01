@@ -1,0 +1,64 @@
+.body{
+    display: contents;
+    place-items: center;
+    min-width: 1rem;
+    max-width: 150rem;
+    min-height:2rem;
+    max-height: auto;
+    padding: auto;
+    margin: auto;
+
+}
+/*titre*/
+.card-header{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* conversation */
+
+.card-body{
+    min-width: 1rem;
+    max-width: 150rem;
+    min-height: 5rem;
+    max-height: auto;
+    background-color: rgb(107, 172, 172);
+    border-radius: 20%;
+    margin: auto;
+    padding: auto;
+     
+}
+.card-footer{
+    min-width: 1rem;
+    max-width: 150rem;
+    min-height: 1rem;
+    max-height: auto;
+    background-color: rgb(107, 172, 172);
+    border-radius: 15%;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.card-message{
+    align-items: center;
+    font-size: 5rem;
+    text-align: center;
+    width: calc(100vw - 300px);
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 20px;border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.input-message{
+    position: relative;
+    align-items: inherit;
+}
+.scrollable{
+  
+    width: 8px;
+    background: #555;
+    border-radius: 8px;
+
+}

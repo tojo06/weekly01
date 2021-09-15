@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CardBody, Container } from 'reactstrap';
+import './css/styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <div className ="body m-5">
+        
+        <div className="card-header">
+            bienvenue sur E-Fandray
+        </div> 
+
+        <div className="card-body">
+          
+        </div>
+
+        <div className="card-message">
+          <input className="input-message" type="input" placeholder="tapez votre message ici ..." />
+        </div>
+
+        <div className="card-footer">
+          je suis tojo andy Ramiandrarivo IGGLIA 3 n°53
+        </div>
+
+      </div>
+    </Container>
+  )
+
 }
 
 export default App;
